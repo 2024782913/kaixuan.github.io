@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=2.2,minimum-scale=1.0,user-scalable=yes">
+<meta name="keywords" content="凯旋假日酒店">
+<meta name="description" content="凯旋假日酒店">
+<title>凯旋假日酒店</title>
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="layer-3.1.1/layer.js"></script>
+
+<script src="swiper-4.3.3/dist/js/swiper.min.js"></script>
+<link rel="stylesheet" href="swiper-4.3.3/dist/css/swiper.min.css">
+
+<link rel="stylesheet" href="css/css.css?v=1.1" />
+
+<style>
+[data-animation]{opacity: 0;}
+[data-animation].animated {opacity: 1;}
+</style>
+<link rel="stylesheet" href="css/animate.css">
+<script src="js/jquery.scrollAnimations.min.js"></script>
+
+<script src="js/web.js"></script>
+
+<head>
+
+<body class="w1440">
+	
+	<div class="head fix" data-animation-container>
+		<img class="head-logo" data-animation-child data-animation="zoomIn " data-animation-delay="100ms" src="/images/logo.png" />
+		<div class="head-nav">
+			<a href="./">
+				<div data-animation-child data-animation="zoomIn " data-animation-delay="300ms" class="head-item big-hover head-item-in">首页</div>
+			</a>
+			<a href="about.php">
+				<div data-animation-child data-animation="zoomIn " data-animation-delay="400ms" class="head-item big-hover ">关于我们</div>
+			</a>
+			<a href="article.php?id=2">
+				<div data-animation-child data-animation="zoomIn " data-animation-delay="500ms" class="head-item big-hover ">酒店设施</div>
+			</a>
+			<a href="product.php">
+				<div data-animation-child data-animation="zoomIn " data-animation-delay="600ms" class="head-item big-hover ">在线预订</div>
+			</a>
+			<a href="article.php?id=3">
+				<div data-animation-child data-animation="zoomIn " data-animation-delay="700ms" class="head-item big-hover ">新闻资讯</div>
+			</a>
+			<a href="article.php?id=4">
+				<div data-animation-child data-animation="zoomIn " data-animation-delay="800ms" class="head-item big-hover ">周边景点</div>
+			</a>
+			<a href="job.php">
+				<div data-animation-child data-animation="zoomIn " data-animation-delay="900ms" class="head-item big-hover ">人才招聘</div>
+			</a>
+			<a href="contact.php">
+				<div data-animation-child data-animation="zoomIn " data-animation-delay="1000ms" class="head-item big-hover ">联系我们</div>
+			</a>
+		</div>
+	</div>
+	<div class="head-h"></div>	<!--幻灯片-->
+	<div class="swiper-container swiper1" >
+		<div class="swiper-wrapper" >
+					<div class="swiper-slide" >
+				<img src="/ueditor/php/upload/image/20211115/1636967478674221.jpg" title="首页幻灯片" width="100%" />
+			</div>
+				</div>
+		<!-- Add Pagination -->
+		<div class="swiper-pagination"></div>
+	</div>
+	<script>
+		var swiper = new Swiper('.swiper1', {
+			loop:false,
+			speed:1000,
+			init: false,
+			autoplay : {
+				delay:3800
+			},
+			grabCursor : true,
+			watchOverflow: true,
+			effect : 'slide',//切换效果
+			pagination: {
+				el: '.swiper1 .swiper-pagination',//null  '.swiper-pagination'
+				type: 'bullets'//bullets 圆点(默认) fraction 分式 progressbar 进度条 custom 自定义
+			},
+			spaceBetween: 15 //在slide之间设置距离（单位px
+		});
+		$(document).ready(function(){ 
+			setTimeout(function(){swiper.init();},200);
+		});
+	</script>
+	<!-- end-->
+	<div class="index-about fix" data-animation-container>
+		<div class="index-about-l" data-animation-child data-animation="zoomIn" data-animation-delay="300ms">
+			<img src="/images/about.jpg" />
+		</div>
+		<div class="index-about-r" data-animation-child data-animation="zoomIn" data-animation-delay="600ms">
+			<div class="index-about-r-en">ABOUT US</div>
+			<div class="index-about-r-cn">关于我们</div>
+			<div class="index-about-r-txt">广州凯旋宫饮食有限公司，是广州天马集团投资近一亿元人民币按国家四星级标准设计建做的酒店。酒店位于从化市环市东路168号（105国道旁）。距广州市区仅需40分钟车程，距新机场也只需20分钟。弛名中外的从化温泉更是近在咫尺，交通便利，往来畅通，四周山环水绕，竹水苍翠，荔林片片，空气清新，充满着浓厚的大自然气息……</div>
+			<a href="about.php"><div class="index-about-r-btn">了解更多>></div></a>
+		</div>
+	</div>
+
+	<div class="index-fac fix" data-animation-container>
+		<div class="index-fac-l" data-animation-child data-animation="zoomIn" data-animation-delay="300ms">
+			<div class="index-fac-l-en">HOTEL FACILITIES</div>
+			
+			<a href="article.php?id=2">
+				<div class="index-fac-l-cn">酒店设施 <span> &gt; </span> </div>
+			</a>
+			
+			<div class="fix">
+				<a href="article.php?id=2&aid=108">
+					<img class="index-fac-l-img" style="width:6rem;" src="/ueditor/php/upload/image/20211116/1637049354648101.jpg" />
+				</a>
+							</div>
+		</div>
+		<a href="article.php?id=2&aid=111">
+			<img class="index-fac-r" data-animation-child data-animation="zoomIn" data-animation-delay="600ms" src="/ueditor/php/upload/image/20211116/1637049213110238.jpg" />
+		</a>
+	</div>
+
+	<div class="footer" data-animation-container>
+		<div class="footer-t fix">
+			<div class="footer-l" data-animation-child data-animation="zoomIn" data-animation-delay="300ms">
+				<img src="images/logo2.png" />
+				<div>
+					<a href="about.php"><span class="big-hover">一 关于我们</span></a>
+					<a href="article.php?id=2"><span class="big-hover">一 酒店设施</span></a>
+					<a href="product.php"><span class="big-hover">一 在线预订</span></a>
+					<a href="article.php?id=3"><span class="big-hover">一 新闻资讯</span></a>
+					<a href="article.php?id=4"><span class="big-hover">一 周边景点</span></a>
+					<a href="job.php"><span class="big-hover">一 人才招聘</span></a>
+					<a href="contact.php"><span class="big-hover">一 联系我们</span></a>
+				</div>
+			</div>
+			<div class="footer-c" data-animation-child data-animation="zoomIn" data-animation-delay="500ms">
+				<div class="footer-c-t" >联系我们</div>
+				<div class="footer-c-x" ></div>
+				<div class="footer-c-p" >电话：020-62161333</div>
+				<div class="footer-c-p" >邮箱：kxjrhotel@126.com</div>
+				<div class="footer-c-p" >地址：广州市从化区江浦环市东路168号</div>
+			</div>
+						<div class="footer-r" data-animation-child data-animation="zoomIn" data-animation-delay="700ms">
+				<img class="big-hover" src="/images/wxcode.jpg" />
+				<p>扫描关注公众号</p>
+			</div>
+					</div>
+		<div class="footer-b"><div data-animation-child data-animation="zoomIn" data-animation-delay="1000ms"><p style="text-align: center;"><span style="color: rgb(242, 242, 242);">Copyright by © 2007-2021 广州凯旋宫饮食有限公司<br/></span><a href="http://beian.miit.gov.cn/" target="_blank" style="color: rgb(242, 242, 242); text-decoration: underline;"><span style="color: rgb(242, 242, 242);">粤ICP备12044446号</span></a><span style="color: rgb(242, 242, 242);">&nbsp;&nbsp;Designed &amp; Supported By 永拓科技</span></p></div></div>
+	</div>
+
+	<img class="gotop" src="images/gotop.png" />
+
+	<script type="text/javascript">
+	$(document).ready(function(){ 
+		$('.gotop').click(function(){$('html,body').animate({scrollTop: '0px'}, 800);});
+		$(window).scroll(function(){
+			var offh1=$(document).scrollTop() ;
+			if(offh1 > 1000){
+				$(".gotop").show(1000);
+			}else{
+				$(".gotop").hide(1000);
+			}
+			if(offh1 > $('.head').outerHeight(true)){ 
+				$(".head").addClass("head-bian")
+			}else{
+				$(".head").removeClass("head-bian")
+			}
+		});
+	});
+
+	$(function(){
+		var $containers = $('[data-animation]:not([data-animation-child]), [data-animation-container]');
+		$containers.scrollAnimations();
+	});
+	</script>
+
+</body>
+</html>
